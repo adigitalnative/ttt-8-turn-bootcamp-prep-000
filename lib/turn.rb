@@ -19,7 +19,7 @@ def valid_move?(board, index)
 end
 
 def position_available?(board, index)
-  
+  if board[index] == " "
 end
 
 # def valid_move?(board, index)
