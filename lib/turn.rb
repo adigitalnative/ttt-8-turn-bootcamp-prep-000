@@ -40,4 +40,5 @@ def turn(board)
     move(board, index)
     display_board(board)
   end
+  puts "I'm sorry, please enter 1-9:"
 end
