@@ -6,10 +6,8 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-index = input_to_index(input)
-
 def valid_move?(board, index)
-  if valid_position?(index) && position_available?(board, index)
+  if valid_position?(input_to_index(index)) && position_available?(board, index)
     return true
   else
     return false
