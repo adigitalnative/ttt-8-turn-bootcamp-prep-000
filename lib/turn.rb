@@ -26,6 +26,10 @@ def position_available?(board, index)
   end
 end
 
+def move(board, index, current_player = "X")
+  
+end
+
 # def valid_move?(board, index)
 #   if index.between?(0,8)
 #     if position_available?(board, index)
