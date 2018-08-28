@@ -10,7 +10,6 @@ def valid_move?(board, index)
   valid_locations = [0, 1, 2, 3, 4, 5, 6, 7, 8]
   
   if valid_locations.include?(index)
-    raise index.inspect
     true
   else
     false
