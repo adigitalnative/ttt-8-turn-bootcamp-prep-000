@@ -10,6 +10,12 @@ def input_to_index(input)
   return input.to_i - 1
 end
 
+def valid_move?(board, index)
+  if index.between?(0,8)
+    true
+  end
+end
+
 # def valid_move?(board, index)
 #   if index.between?(0,8)
 #     if position_available?(board, index)
