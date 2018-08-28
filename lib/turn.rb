@@ -8,14 +8,14 @@ end
 
 def valid_move?(board, index)
   if index.between?(0,8)
-    if position_available?(board, index)
-      return true
+    if !position_taken?(board, index)
+      true
     end
   end
-      
-  # Returns true if index is within 0-8 & is currently unoccupied by x or o token
-  # May want to code a position_taken?(board, index) to make this simpler
+
+  # position.to_i.between?(0,8) && !position_taken?(board, position.to_i-1)
 end
+
 
 def move(board, index, token = X)
   #Default token can be x.
