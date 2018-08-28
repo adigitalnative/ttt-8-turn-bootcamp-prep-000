@@ -34,7 +34,6 @@ def position_available?(board, index)
 end
 
 def valid_position?(index)
-  raise index.inspect
   valid_positions = [0, 1, 2, 3,4,5,6,7,8]
   
   if valid_positions.include?(index)
