@@ -12,8 +12,7 @@ def valid_move?(board, index)
 end
 
 def move(board, index, token = X)
-  #Default token can be x.
-  # Set correct index value of the position withtin the board equal to the token
+  true
 end
 
 def input_to_index(input)
