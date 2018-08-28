@@ -7,7 +7,6 @@ def display_board(board)
 end
 
 def valid_move?(board, index)
-  index = input_to_index(index)
   if valid_position?(index) && position_available?(board, index)
     return true
   else
