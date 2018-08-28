@@ -27,7 +27,7 @@ def position_available?(board, index)
 end
 
 def move(board, index, current_player = "X")
-  
+  board[index] = current_player
 end
 
 # def valid_move?(board, index)
