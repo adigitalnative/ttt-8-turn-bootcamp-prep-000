@@ -20,6 +20,10 @@ end
 
 def position_available?(board, index)
   if board[index] == " "
+    true
+  else
+    false
+  end
 end
 
 # def valid_move?(board, index)
