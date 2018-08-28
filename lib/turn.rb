@@ -25,23 +25,10 @@ def input_to_index(input)
   return input.to_i - 1
 end
 
-def valid_position?(index)
-  valid_positions = [0, 1, 2, 3, 4, 5, 6, 7, 8]
-  if valid_positions.include?(index)
-    return true
-  else
-    return false
-  end
-end
-
-def position_available?(board, index)
+def position_taken?(board, index)
   if board[index] == "" || " " || nil
-    true
-  else
     false
+  else
+    true
   end
-end
-
-def position_available?(index)
-  
 end
