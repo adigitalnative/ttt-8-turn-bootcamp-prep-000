@@ -7,7 +7,13 @@ def display_board(board)
 end
 
 def valid_move?(board, index)
-  false
+  valid_locations = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  
+  if valid_locations.include?(index)
+    true
+  else
+    false
+  end
   # Returns true if index is within 0-8 & is currently unoccupied by x or o token
   # May want to code a position_taken?(board, index) to make this simpler
 end
