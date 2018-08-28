@@ -8,6 +8,11 @@ end
 
 def valid_move?(board, index)
   if index.between?(0,8)
+    if position_available?(board, index)
+      return true
+    else
+      return false
+      
   # Returns true if index is within 0-8 & is currently unoccupied by x or o token
   # May want to code a position_taken?(board, index) to make this simpler
 end
