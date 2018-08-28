@@ -12,10 +12,14 @@ end
 
 def valid_move?(board, index)
   if index.between?(0,8)
-    true
-  else
-    false
+    if position_available?(board, index)
+      true
+    end
   end
+end
+
+def position_available?(board, index)
+  
 end
 
 # def valid_move?(board, index)
